@@ -1,0 +1,54 @@
+body {
+  font-family: monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+body .headText h1 {
+  font-size: 80px;
+}
+body .subheadText p {
+  font-size: 32px;
+}
+body .searchBar input {
+  width: 80%;
+  max-width: 600px;
+  height: 2em;
+  padding: 10px;
+  border: none;
+  border-radius: 17px;
+  box-shadow: 5px 5px 10px 0 rgb(27, 27, 27);
+}
+
+@media (max-width: 1024px) {
+  .headText h1 {
+    font-size: 50px;
+  }
+  .subheadText p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .headText h1 {
+    font-size: 35px;
+  }
+  .subheadText p {
+    font-size: 18px;
+  }
+  .searchBar input {
+    width: 90%;
+    height: 1.2em;
+  }
+}
+@media (max-width: 480px) {
+  .headText h1 {
+    font-size: 28px;
+  }
+  .subheadText p {
+    font-size: 12px;
+  }
+  .searchBar input {
+    width: 95%;
+    height: 1em;
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,42 @@
+.semester-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  justify-content: center;
+}
+.semester-container .semester-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px 20px;
+  border-radius: 13px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+.semester-container .semester-card .semester-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .semester-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .semester-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .semester-container .semester-card {
+    font-size: 18px;
+    padding: 30px;
+  }
+}/*# sourceMappingURL=semesterCard.css.map */
