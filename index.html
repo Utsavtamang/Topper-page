@@ -7,11 +7,12 @@
     <title>Notes</title>
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="stylesheet" href="./src/css/semesterCard.css">
-    <script src="./src/js/script.js"></script>
+    <link rel="stylesheet" href="./src/css/popUp.css">
+    <script src="./src/js/SemesterCard.js"></script>
 </head>
 
 <body>
-    <!---Landing Page start-->
+    <!---Landing Page start "main.css starts"-->
     <div class="headText" align="center">
         <h1>Topper Notes</h1>
     </div>
@@ -23,21 +24,30 @@
     <div class="searchBar" align="center">
         <input type="text" placeholder="     Search...">
     </div>
-    <!--landing Page end-->
+    <!--landing Page end "main.css ends"-->
 
-    <!--Semester Cards Down-->
+    <!--Semester Cards Down "semesterCard.css start"-->
     <div class="semester-container">
-        <a href="#" class="semester-card">First Semester</a>
-        <a href="#" class="semester-card">Second Semester</a>
-        <a href="#" class="semester-card">Third Semester</a>
-        <a href="#" class="semester-card">Fourth Semester</a>
-        <a href="#" class="semester-card">Fifth Semester</a>
-        <a href="#" class="semester-card">Sixth Semester</a>
-        <a href="#" class="semester-card">Seventh Semester</a>
-        <a href="#" class="semester-card">Eighth Semester</a>
+        <div class="semester-card semLink" id="1stSem">First Semester</div>
+        <div class="semester-card semLink" id="2ndSem">Second Semester</div>
+        <div class="semester-card semLink" id="3rdSem">Third Semester</div>
+        <div class="semester-card semLink" id="4thSem">Fourth Semester</div>
+        <div class="semester-card semLink" id="5thSem">Fifth Semester</div>
+        <div class="semester-card semLink" id="6thSem">Sixth Semester</div>
+        <div class="semester-card semLink" id="7thSem">Seventh Semester</div>
+        <div class="semester-card semLink" id="8thSem">Eighth semester</div>
+    </div>
+    <!--Semester Cards Up-->
+
+    <!--Popup Form-->
+    <div id="popupForm">
+        <h3 id="popupTitle"></h3>
+        <div id="popupContent"></div>
+        <button onclick="closeForm()">close</button>
     </div>
 
-    <!--Semester Cards Up-->
+    <!--Overlay-->
+    <div id="overlay"></div>
+    <!--Popup Form "semesterCard.css ends"-->
 </body>
-
 </html>

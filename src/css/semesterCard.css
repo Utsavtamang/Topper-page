@@ -6,6 +6,9 @@
   padding: 20px;
   justify-content: center;
 }
+.semester-container:hover {
+  cursor: pointer;
+}
 .semester-container .semester-card {
   display: flex;
   align-items: center;
@@ -21,7 +24,7 @@
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: center;
 }
-.semester-container .semester-card .semester-card:hover {
+.semester-container .semester-card:hover {
   transform: translateY(-5px);
   box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
 }
